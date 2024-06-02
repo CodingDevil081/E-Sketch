@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <header>
+        <div class="tittle">
+            <h1>Draw an E-Sketch</h1>
+        </div>
+    </header>
+    <main>
+        <div class="game">
+            <div class="left">
+                <div class="menu">
+                    <div class="contents">
+                        <div class="size">
+                            <input id ="sz" type="number" placeholder="Size" value=null>
+                            <button id ="ent">Enter</button>
+                        </div>
+                        <div class="drawMenu">
+                            <button class = "dm" id="cl">Clear the Screen</button>
+                            <button class = "dm" id="rm">Remove border</button>
+                            <button class = "dm" id="pn">Pencil</button>
+                            <button class = "dm" id="rb">Rubber</button>
+                            <button class = "dm" id="rnd">Random colour</button>
+                        </div>
+                    </div>
+                    <div class="colour">
+                        <h3>Select your fav colour : </h3>
+                        <input type="color" name="" id="selectColor">
+                    </div>
+                </div>
+                <div class="note">
+                    <h4> Note : The Size should be less than 50. </h4>
+                </div>
+            </div>
+            <div class="drwaing">
+                <div class="grid-container" id="gridContainer"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright"><span>© 2024 E_Sketch</span></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
